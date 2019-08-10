@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+			body {
+			  margin: 5rem 0;
+			  min-height: 200vh;
+			  font-family: 'PT Serif', serif;
+			}
+			p {
+			  max-width: 500px;
+			  margin: 0 auto 1rem;
+			}
+			text {
+			  fill: red;
+			  font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p>LANSING, Mich. — Sure, you could wear a campaign button. But a photo with the candidate is so much more versatile: suitable for avatars, posting with a clever hashtag, even printing out and framing if you want to go analog.</p>
+
+		<p>Posing for the camera with a presidential candidate used to be a perk generally reserved for wealthy donors. At Senator Elizabeth Warren’s events, all it costs is passing some time in a well-organized selfie* line.</p>
+
+		<svg width="100%" height="160px" viewBox="0 0 1098.72 89.55">
+		  <path id="curve" fill="yellow" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+		  <text width="100%" style="transform:translate3d(0,0,0);">
+		      <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startOffset="1200px" id="text-path">*The pictures are not technically selfies.</textPath>
+		  </text>
+		</svg>
+
+		<p>At a recent event in Lansing, a small army of campaign staff members — working like a factory assembly line that hums along — helped usher voters through their encounter with Ms. Warren in eight key steps.</p>
+
+		<p>Since entering the presidential race, Ms. Warren has taken pictures with more than 38,000 people, her campaign estimates. Ms. Warren says the photos are part of her effort to build what she likes to call a “grass-roots movement.”</p>
+
+		<p>“It’s how I make this real, person to person,” she said in an interview. “I know I won’t be able to shake the hand of every single person; I know I won’t be able to take a selfie with every single human being in this country. But I’m going to try.”</p>
+
+		<script type="text/javascript">
+			const textPath = document.querySelector("#text-path");
+
+			const h = document.documentElement, 
+			      b = document.body,
+			      st = 'scrollTop',
+			      sh = 'scrollHeight';
+
+			document.addEventListener("scroll", e => {
+			  let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+			  textPath.setAttribute("startOffset", (-percent * 30) + 1200)
+			});
+		</script>
+	</body>
+</html>
